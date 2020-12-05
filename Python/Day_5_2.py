@@ -25,5 +25,5 @@ missing_seats = [
 ]
 
 for index, item in enumerate(missing_seats[1:]):
-    if missing_seats[index] + 1 < (item):
+    if missing_seats[index] + 1 < item:
         print(item)
