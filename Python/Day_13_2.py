@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 def open_file():
     with open("Day_13_1.txt", "r") as fp:
         lines = fp.readlines()
@@ -23,3 +24,22 @@ def part2(busses):
 if __name__ == "__main__":
     input = open_file()
     print(part2(input))
+=======
+lines = []
+
+with open("Day_13_1.txt", "r") as file:
+    for line in file:
+        lines.append(line.strip().rstrip("\n"))
+
+lines.pop(0)
+lines = lines[0].split(",")
+print(lines)
+
+indexes = []
+
+for line in lines:
+    if line != "x":
+        indexes.append(lines.index(line))
+
+print(indexes)
+>>>>>>> Stashed changes
